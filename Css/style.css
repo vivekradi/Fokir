@@ -1,0 +1,309 @@
+:root{
+    --main-site-color:#FF305B;
+    --main-hover-color:#EC2403;
+    --main-section-color:#F1F1F1;
+}
+html{
+    scroll-padding-top:61px;
+}
+/* Nav Bar Start */
+nav .logo-navbar{
+    color:var(--main-site-color);
+}
+nav .navbar-nav .nav-link.active{
+    color:var(--main-site-color) !important;
+}
+nav .nav-link{
+    transition:all 0.4s ease-in-out;
+    color:#fff ;
+}
+nav .nav-link:hover{
+    color:var(--main-site-color);
+}
+.navbar{
+    background-color:#555555 !important;
+}
+nav .navbar-toggler{
+    background-color: #fff;
+
+}
+/* Nav Bar End */
+/* Start Of The Home Section */
+.home{
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../Images/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.home .head-home{
+    color:var(--main-site-color);
+}
+.home .animate::after{
+   content:" |";
+   animation-name:header-animation;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+
+}
+    @keyframes header-animation {
+        0% {content: " |";}
+        3% {content: "D|";}
+        5% {content: "De|";}
+        7% {content: "Dev|";}
+        10% {content: "Deve|";}
+        13% {content: "Devel|";}
+        15% {content: "Develo|";}
+        17% {content: "Develop|";}
+        20% {content: "Developm|";}
+        24% {content: "Developme|";}
+        25% {content: "Developmen|";}
+        27% {content: "Development|";}
+        30% {content: "Development|";}
+        32% {content: "Developmen|";}
+        35% {content: "Developme|";}
+        37% {content: "Develop|";}
+        40% {content: "Develo|";}
+        42% {content: "Devel|";}
+        45% {content: "Deve|";}
+        47% {content: "Dev|";}
+        50% {content: "De|";}
+        52% {content: "Des|";}
+        55% {content: "Desi|";}
+        57% {content: "Desig|";}
+        60% {content: "Design|";}
+        62% {content: "Designe|";}
+        65% {content: "Designer|";}
+        67% {content: "Designer|";}
+        70% {content: "Designe|";}
+        72% {content: "Design|";}
+        75% {content: "Desig|";}
+        77% {content: "Desi|";}
+        80% {content: "Des|";}
+        82% {content: "De|";}
+        85% {content: "Dev|";}
+        87% {content: "Deve|";}
+        90% {content: "Devel|";}
+        92% {content: "Develo|";}
+        95% {content: "Develop|";}
+        97% {content: "Develope|";}
+        100% {content: "Developer|";}
+      }
+
+/* End Of The Home Section */
+/* Start Of The About Section */
+.about .inner-about .cover{
+    height:450px;
+    width:400px;
+    border:10px solid grey;
+    border-radius:10px;
+}
+.about .about-image{
+    transform: translate(10% ,5%);
+    border-radius:5px; 
+    position:relative; 
+}
+.about .about-p{
+    border-bottom:1px dashed gray;
+}
+.about .about-layer{
+    height:440px;
+    width:360px;
+    background-color:rgba(0,0,0,0.6);
+    position:absolute;
+    top:30px;
+    bottom:0;
+    left:45px;
+    right:0;
+    border-radius:10px;
+    transition: all 0.6s ease;
+    opacity: 0;
+}
+.about .about-layer ul{
+    margin-top:50%;
+}
+.about .about-layer ul li{
+    margin-left:30px;
+}
+.about .about-layer ul li i{
+    font-size:20px;
+}
+.about .about-layer:hover{
+    opacity: 1;
+}
+.about .about-layer:hover i{
+    color:var(--main-site-color);
+    cursor:pointer;
+}
+.about .btn-about{
+    background-color:var(--main-site-color);
+    padding:10px 30px;
+    color:#fff;
+    font-size:18px;
+    margin: 0 10px;
+}
+.about .btn-about:hover{
+    background-color:var(--main-hover-color);
+}
+.about .hello-before{
+    position:relative;
+}
+.about .hello-before::before{
+    content:'';
+    position: absolute;
+    width:5px;
+    height:25px;
+    top:8px;
+    left:-10px;
+    
+    background-color:var(--main-site-color);
+}
+/* End Of The About Section */
+/* Start Of The Services Section */
+.services{
+    background-color:var(--main-section-color);
+}
+.services .inner-services i{
+    font-size:40px;
+    color:var(--main-site-color);
+    transition: all 0.6s;
+}
+.services .inner-services:hover{
+    background-color: #fff;
+}
+.services .inner-services:hover i{
+    scale:1.4;
+}
+/* End Of The Services Section */
+/* Start Of The Portfolio Section */
+.portfolio .nav-tabs{
+    border-bottom:none;
+}
+.portfolio .nav-tabs .nav-link.active{
+    color:var(--main-site-color);
+    border-color:transparent;
+}
+.portfolio .nav-tabs .nav-link:hover{
+    border-color:transparent;
+}
+.portfolio .nav-tabs .nav-link{
+    color:#000;
+}
+.portfolio .inner-portfolio{
+    position: relative;
+}
+.portfolio .portfolio-layer{
+ min-width: 360px;
+    min-height:270px;
+background-color: rgba(0,0,0,0.6);
+position:absolute;
+inset:0;
+opacity: 0;
+transition: all 0.6s;
+}
+.portfolio .inner-portfolio:hover .portfolio-layer{
+opacity: 1;
+}
+.data-portfolio{
+    background-color:var(--main-section-color);
+}
+.data-portfolio .inner-data-portfolio i{
+    color:var(--main-site-color);
+    font-size:40px;
+}
+/* End Of The Portfolio Section */
+/* Start Of The Testimonial Section */
+.testimonial .slider{
+    max-width:800px;
+    margin:0 auto;
+    border-radius:10px;
+    background-color: var(--main-section-color);
+    position:relative;
+    overflow: hidden;
+}
+.testimonial .slider i{
+    color:gold;
+}
+.testimonial .icon-test{
+    margin-left:80px;
+}
+.testimonial .slider .contain-photo .photo-slider {
+    border-radius:50%;
+    background-color:#F1F1F1;
+    width:100px;
+    padding-top:20px;
+}
+.testimonial .carousel-indicators{
+    
+    bottom:-60px;
+    margin-bottom: 30px;
+}
+.testimonial .carousel-indicators .active{
+    background-color:var(--main-site-color) !important;
+    height:8px;
+    width:30px;
+    border-radius:45%;
+}
+.testimonial .carousel-indicators [data-bs-target]{
+    background-color:#ff3059b3;
+    height:8px;
+    width:30px;
+    border-radius:45%;
+
+}
+/* End Of The Testimonial Section */
+/* Start Of The Blog Section */
+.blog{
+    background-color:var(--main-section-color);
+}
+.blog .head-blog{
+    transition: all 0.6s;
+}
+.blog .head-blog:hover{
+    color:var(--main-site-color);
+    cursor:pointer;
+}
+.blog .link-blog{
+    text-decoration:none;
+    color:gray;
+    font-size:18px;
+}
+.blog .link-blog:hover{
+    color:var(--main-site-color);
+}
+/* End Of The Blog Section */
+/* Start Of The Contact Section */
+.contact .form-control:focus{
+    border:none;
+    box-shadow: 0 0 0 2px var(--main-site-color);
+}
+.contact form .btn-contact{
+    background-color:var(--main-site-color);
+    padding:10px 30px;
+    color:#fff;
+    margin-top:15px; 
+}
+.contact form .btn-contact:hover{
+    background-color:var(--main-hover-color);
+}
+/* End Of The Contact Section */
+/* Start Of Footer */
+footer{
+    background-color:#333333;
+}
+footer .icon-footer i{
+    margin:0 20px;
+    color:#fff;
+    font-size:20px;
+
+}
+footer .icon-footer i:hover{
+    color:var(--main-site-color);
+    cursor:pointer;
+}
+footer .final{
+    color:var(--main-site-color);
+    font-size:17px;
+}
+/* End Of Footer */
